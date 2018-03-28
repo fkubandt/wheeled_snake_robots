@@ -2,6 +2,7 @@
 Exploring robustness and adaptability of locomotion primitives in a wheeled snake robot with self-organized controllers.
 ---------------------------------------------------------------------------------------------------------
 Information on the lpzRobot Simulator can be found at http://robot.informatik.uni-leipzig.de/software/ 
+
 Documentation : http://robot.informatik.uni-leipzig.de/software/doc/html/index.html
 
 ******INSTALLATION********
