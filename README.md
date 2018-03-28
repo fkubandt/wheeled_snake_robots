@@ -53,7 +53,7 @@ data.columns = col
 ```
 access values:
 `data.loc[:,"t"]`
-
+Pandas has the advantage of being good at handling big data files, the data can be split or only partly read into the running program to reduce memory usage.
 ---------------------------------------------------------------------
 
 *******MAKING VIDEOS********
