@@ -10,21 +10,25 @@ Documentation : http://robot.informatik.uni-leipzig.de/software/doc/html/index.h
 For installation, use the development version from https://github.com/georgmartius/lpzrobots
 
 as a root install is not possible on the university pc, extra directories are created in home. Path variables have therefore to be set manually:
-export PATH=/home/<your username>/bin:$PATH
+```
+export PATH=/home/<your username>/bin:$PATH \\
 export LD_LIBRARY_PATH=/home/<your username>/lib
-
+```
 then 
+```
 cd lpzrobots
 make all
 /home/<your username>
 d
 Y
-
+```
 if the Guilogger does not work:
+
 go into guilogger directory
+```
 qmake -qt4 guilogger.pro
 make
-
+```
 then copy the guilogger from guilogger/bin to home/bin
 
 ----------------------------------------------------------------------
@@ -33,7 +37,7 @@ then copy the guilogger from guilogger/bin to home/bin
 
 What is written into the logfiles can be adapted in the code. For handling the logfiles when plotting, best use pandas
 For the current log files you can use:
-
+```
 col = ['t', 
 	'phi1', 'phi2', 'phi3', 'phi4', 'phi5', 'phi6', 'phi7', 'phi8', 'phi9', 'phi10',
  	'phidot1', 'phidot2', 'phidot3', 'phidot4', 'phidot5', 'phidot6', 'phidot7', 'phidot8', 'phidot9', 'phidot10',
@@ -46,9 +50,9 @@ col = ['t',
 import pandas as pd
 data = pd.read_table("Car.log", comment="#", delim_whitespace=True, header=None)
 data.columns = col
-
+```
 access values:
-data.loc[:,"t"]
+`data.loc[:,"t"]`
 
 ---------------------------------------------------------------------
 
@@ -56,5 +60,6 @@ data.loc[:,"t"]
 
 record either in running simulation or check ./start --help for other options
 make video out of jpgs:
-
+```
 ffmpeg -framerate 24 -i frame_%06d.jpg <filename>.mp4
+```
