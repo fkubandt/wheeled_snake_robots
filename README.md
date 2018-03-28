@@ -59,6 +59,7 @@ access values:
 *******MAKING VIDEOS********
 
 record either in running simulation or check ./start --help for other options
+
 make video out of jpgs:
 ```
 ffmpeg -framerate 24 -i frame_%06d.jpg <filename>.mp4
