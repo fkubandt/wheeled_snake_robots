@@ -57,7 +57,7 @@ access values:
 Pandas has the advantage of being good at handling big data files, the data can be split or only partly read into the running program to reduce memory usage.
 
 --------------------------
-MAKING VIDEOS********
+******MAKING VIDEOS********
 
 record either in running simulation or check ./start --help for other options
 
