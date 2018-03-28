@@ -5,6 +5,7 @@ Information on the lpzRobot Simulator can be found at http://robot.informatik.un
 Documentation : http://robot.informatik.uni-leipzig.de/software/doc/html/index.html
 
 ******INSTALLATION********
+
 For installation, use the development version from https://github.com/georgmartius/lpzrobots
 
 as a root install is not possible on the university pc, extra directories are created in home. Path variables have therefore to be set manually:
@@ -28,6 +29,7 @@ then copy the guilogger from guilogger/bin to home/bin
 ----------------------------------------------------------------------
 
 ******USING THE LOGFILES*******
+
 What is written into the logfiles can be adapted in the code. For handling the logfiles when plotting, best use pandas
 For the current log files you can use:
 
@@ -50,6 +52,7 @@ data.loc[:,"t"]
 ---------------------------------------------------------------------
 
 *******MAKING VIDEOS********
+
 record either in running simulation or check ./start --help for other options
 make video out of jpgs:
 
